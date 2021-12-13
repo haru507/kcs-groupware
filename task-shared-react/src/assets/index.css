@@ -1,0 +1,155 @@
+body {
+  font-family: "Avenir Next";
+  height: 85vh;
+}
+
+.main h1 {
+  font-size: 80px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.main span {
+  color:#81c784;
+}
+
+.main h2 {
+  border-bottom: 2px solid #dee7ec;
+  font-size: 28px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#wrapper {
+	display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.box{
+  margin: 20px;
+  width: 25%;
+  text-align: center;
+}
+
+/*-----------*/
+/*タブ切り替え全体のスタイル*/
+.tabs {
+  margin-top: 50px;
+  padding-bottom: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 1000px;
+  margin: 0 auto;}
+
+/*タブのスタイル*/
+.tab_item {
+  width: calc(100%/4);
+  height: 50px;
+  border-bottom: 3px solid #81c784;
+  background-color: #d9d9d9;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+  color: #565656;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+.tab_item:hover {
+  opacity: 0.75;
+}
+
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
+  display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+  display: none;
+  padding: 40px 40px 0;
+  clear: both;
+  overflow: hidden;
+}
+
+
+/*選択されているタブのコンテンツのみを表示*/
+#all:checked ~ #all_content,
+#programming:checked ~ #programming_content,
+#design:checked ~ #design_content,
+#cop:checked ~ #cop_content{
+  display: block;
+}
+
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked + .tab_item {
+  background-color: #81c784;
+  color: #fff;
+}
+
+.text1{
+  color:#81c784;
+  font-size: 30px;
+}
+
+.text2{
+  color:cornflowerblue;
+  font-size: 30px;
+}
+
+.text3{
+  color:cadetblue;
+  font-size: 30px;
+}
+
+.text4{
+  color:palevioletred;
+  font-size: 30px;
+}
+
+.tab_content_description{
+  display: flex;
+  justify-content: space-around;
+}
+.c-txtsp{
+  margin-left: 20px;
+}
+
+html,
+canvas,
+body,
+#react-container,
+#routeContainer {
+  font-family: Helvetica, Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.time-line-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  margin: 10px;
+}

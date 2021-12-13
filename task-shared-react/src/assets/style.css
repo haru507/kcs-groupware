@@ -1,0 +1,34 @@
+.c-section__loading {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  opacity: 0.9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 9999;
+}
+
+/*********** Module Spacer ***********/
+.module-spacer-extra-extra-small {
+  height: 6px
+}
+.module-spacer--extra-extra-small {
+  height: 12px
+}
+.module-spacer--extra-small {
+  height: 12px
+}
+.module-spacer--small {
+  height: 20px
+}
+.module-spacer--small0 {
+  height: 24px
+}
+.module-spacer--medium {
+  height: 32px
+}
