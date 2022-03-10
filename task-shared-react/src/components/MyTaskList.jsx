@@ -12,7 +12,7 @@ import Tooltip from '@material-ui/core/Tooltip'
 import areIntervalsOverlapping from 'date-fns/areIntervalsOverlapping'
 
 import format from 'date-fns/format'
-import Pagination from './Pagination.js'
+import Pagination from './Pagination.jsx'
 import { getUserId } from '../reducks/users/selectors';
 import {useSelector} from 'react-redux';
 import isSameDay from 'date-fns/isSameDay'

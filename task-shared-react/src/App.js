@@ -20,7 +20,6 @@ export function App() {
           </Auth>
         </Switch>
       </Loading>
-      
     </div>
   );
 }

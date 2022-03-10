@@ -126,7 +126,7 @@ const SideTabs = (props) => {
     <div>
 
       <div style={{ position: 'absolute', top: 13, left: 10, textAlign: 'center', display: 'flex'}}>
-        <Avatar style={{ backgroundColor: "#81c784" }}>{user.name.split('').[0][0] + user.name.split(' ')[1][0]}</Avatar>
+        <Avatar style={{ backgroundColor: "#81c784" }}>{user.name.split(' ').[0][0] + user.name.split(' ')[1][0]}</Avatar>
         <Typography style={{ marginTop: 10, marginLeft: 15 }}>{user.name}</Typography>
       </div>
       <div className={classes.toolbar} />
